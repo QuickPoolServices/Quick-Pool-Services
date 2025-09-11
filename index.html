@@ -32,10 +32,17 @@
   
   <section data-bs-version="5.1" class="menu menu01 speakerm5 cid-uTh9zH5EaL" once="menu" id="menu-1-uTh9zH5EaL">
 
+    <nav>
+      <button class="toggle-btn" data-target="home">Home</button>
+      <button class="toggle-btn" data-target="services">Services</button>
+      <button class="toggle-btn" data-target="about">About Us</button>
+      <button class="toggle-btn" data-target="contact">Contact</button>
+    </nav>
+
     
 
-    <nav class="navbar navbar-dropdown navbar-expand-lg">
-        <div class="menu_box container-fluid">
+    <nav class="navbar navbar-dropdown navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
             <div class="navbar-brand d-flex">
                 <span class="navbar-logo">
                     <a href="https://quickpoolservices.com">
@@ -53,19 +60,22 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#about-us">About Us</a></li></ul>
-                
-
-                <div class="mbr-section-btn-main" role="tablist"><a class="btn btn-danger display-4" href="tel:+27745551054">Contact Us</a></div>
+                <ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#home">Home</a>
+                </li>
+                    <li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#services">Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#about-us">About Us</a>
+                    </li>
+                <li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="https://quickpoolservices.co.za#contact">Contact</a>
+                </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <section id="home"> <h1>Welcome to Quick Pool Services</h1> <p>We provide expert pool installation, maintenance and renovation 
+    <section id="home" class="toggle-section"> <h1>Welcome to Quick Pool Services</h1> <p>We provide expert pool installation, maintenance and renovation 
     services across South Africa.</p></section>
     
-    <section id="Services">
+    <section id="Services" class="toggle-section">
      <h1>Our Services</h1> <p>At Quick Pool Services we provide a full range of swimming pool solutions to meet every need.</p>
       <div class="Service"> <h2>Pool Installation</h2> 
         <p>We design and install custom swimming pools that fit your space and lifestyle. Whether it's a family pool, lap pool or luxury 
@@ -79,14 +89,24 @@
 
       <div style="text-align:center;"> <a class="contact-btn" href="mailto:info@quickpoolservices.co.za">Contact Us</div></section>
 
-    <section id="about"> <h1>About Us</h1> 
+    <section id="about" class="toggle-section"> <h1>About Us</h1> 
       <p>Quick Pool Services is a committed to quality and customer satisfaction across South Africa.
       Our experienced team ensures your pool always looks and works perfectly.</p>
     </section>
     
-    <section id="contact"> <h1>Contact Us</h1>
+    <section id="contact" class="toggle-section"> <h1>Contact Us</h1>
       <p>Call us at<strong>074 555 1054</strong>or email us at <a href="mailto:info@quickpoolservices.co.za">info@quickpoolservices.co.za<a/>.</p></section>
+    
+    <script>const buttons = document.querySelectorAll('.toggle-btn'); buttons.forEach(button => { button.addEventListener('click', () => {
+  const sectionId = button.getAttribute('data-target '); const section = document.getElementById(sectionId);
 
+  if (section.style.display === 'block') { section.style.display = 'none'; } else {
+          section.style.display = 'block'; section.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+                                                                                                });
+    </script>
+          
       
     <section data-bs-version="5.1" class="menu menu01 speakerm5 cid-uTh9zH5EaL" once="menu" id="menu-1-uTh9zH5EaL">
     <nav class="navbar navbar-dropdown navbar-expand-lg">
