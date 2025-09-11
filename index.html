@@ -26,6 +26,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&amp;display=swap&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&amp;display=swap&amp;display=swap"></noscript>
   <link rel="stylesheet" href="https://r.mobirisesite.com/1705599/assets/css/mbr-additional.css?rnd=1755001942007" type="text/css">
+  <style>.toggle-section { display: none  !important; }</style>
   
 </head>
 <body>
@@ -75,7 +76,7 @@
     <section id="home" class="toggle-section"> <h1>Welcome to Quick Pool Services</h1> <p>We provide expert pool installation, maintenance and renovation 
     services across South Africa.</p></section>
     
-    <section id="Services" class="toggle-section">
+    <section id="services" class="toggle-section">
      <h1>Our Services</h1> <p>At Quick Pool Services we provide a full range of swimming pool solutions to meet every need.</p>
       <div class="Service"> <h2>Pool Installation</h2> 
         <p>We design and install custom swimming pools that fit your space and lifestyle. Whether it's a family pool, lap pool or luxury 
@@ -98,7 +99,7 @@
       <p>Call us at<strong>074 555 1054</strong>or email us at <a href="mailto:info@quickpoolservices.co.za">info@quickpoolservices.co.za<a/>.</p></section>
     
     <script>const buttons = document.querySelectorAll('.toggle-btn'); buttons.forEach(button => { button.addEventListener('click', () => {
-  const sectionId = button.getAttribute('data-target '); const section = document.getElementById(sectionId);
+  const sectionId = button.getAttribute('data-target'); const section = document.getElementById(sectionId);
 
   if (section.style.display === 'block') { section.style.display = 'none'; } else {
           section.style.display = 'block'; section.scrollIntoView({ behavior: 'smooth' });
