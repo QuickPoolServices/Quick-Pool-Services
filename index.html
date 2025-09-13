@@ -107,14 +107,19 @@
     <section id="contact" class="toggle-section"> <h1>Contact Us</h1>
       <p>Call us at<strong>074 555 1054</strong>or email us at <a href="mailto:info@quickpoolservices.co.za">info@quickpoolservices.co.za<a/>.</p></section>
     
-    <script>const buttons = document.querySelectorAll('.toggle-btn'); buttons.forEach(button => { button.addEventListener('click', () => {
-  const sectionId = button.getAttribute('data-target'); const section = document.getElementById(sectionId);
+    <script>const menuToggle = document.querySelectorAll('.menu-toggle'); const navLinks = document.querySelector('.nav-links'); 
+            menuToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); });
 
-  if (section.style.display === 'block') { section.style.display = 'none'; } else {
-          section.style.display = 'block'; section.scrollIntoView({ behavior: 'smooth' });
-  }
-});
-                                                                                                });
+            const buttons = document.querySelectorAll('.toggle-btn'); const section = document.querySelectorAll('.toggle-section');
+      buttons.forEach(button => { button.addEventListener('click' () => { const target = button.getAttribute('data-target');
+                                                                         sections.forEach(section => section.style.display = 'none');
+            const sectionToShow = document.getElementById(target);  if (sectionToShow) { 
+              sectionToShow.style.display = 'block'; sectionToShow.scrollIntoView({ behavior: 'smooth' });
+        }
+         navLinks.classList.remove('active');
+                                                                        });
+      });
+      document.getElementById('home').style.display = 'block';
     </script>
           
       
