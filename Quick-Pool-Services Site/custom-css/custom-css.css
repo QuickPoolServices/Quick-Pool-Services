@@ -128,3 +128,40 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
     justify-content: center;
   }
 }
+.embla {
+  position: relative;
+}
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  z-index: 10;
+}
+.embla__prev { left: 1rem; }
+.embla__next { right: 1rem; 
+}
+.card .collapsed .bi-chevron-down {
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+.card:not(.collapsed) .bi-chevron-down {
+  transform: rotate(0deg);
+}
+.social-icons a[href*="facebook.com"] .fab.fa-facebook {
+  color: #1877F2 !important;
+}
+.social-icons a[href*="twitter.com"] .fab.fa-twitter {
+  color: #000000 !important;
+}
+.social-icons a[href*="instagram.com"] .fab.fa-instagram {
+  color: #E4405F !important;
+}
+.social-icons a[href*="youtube.com"] .fab.fa-youtube {
+  color: #FF0000 !important;
+}
+.social-icons a[href*="linkedin.com"] .fab.fa-linkedin-in {
+  color: #0A66C2 !important;
+}
