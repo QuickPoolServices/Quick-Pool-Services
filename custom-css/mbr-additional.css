@@ -13,7 +13,11 @@ img,
 .item-wrapper {
   border-radius: 2rem !important;
 }
-.card-wrapper .image-wrapper img,
+.card-wrapper .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .card-wrapper .app-video-wrapper img {
   border-radius: 1rem !important;
 }
@@ -8557,4 +8561,27 @@ img {
 
 .embla__button:hover {
   background: rgba(0,0,0,0.8);
+}
+@media (max-width: 768px) {
+  .header02 {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .title-wrapper {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    text-align: center;
+    padding: 20px;
+  }
+  .image-wrapper {
+    margin-bottom: 20px;
+  }
+
 }
