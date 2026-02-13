@@ -639,7 +639,7 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 }
 a,
 a:hover {
-  color: #90e0ef;
+  color: #0e0f0f;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
@@ -1362,7 +1362,7 @@ img {
   text-align: center;
 }
 .cid-uTh9zH5EaL .mbr-text {
-  color: #000000;
+  color: #eeeff5;
   text-align: center;
 }
 .cid-uTh9zH5EaL .mbr-section-subtitle,

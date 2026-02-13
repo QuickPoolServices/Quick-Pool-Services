@@ -24,7 +24,7 @@ p {
     font-family: 'Source Serif 4', serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #666666;
+    color: #2e269c;
     margin: 10px 0;
 }
 
@@ -112,13 +112,15 @@ footer.professional-footer-dark .social-icons a:hover {
 
 footer.professional-footer-dark .footer-bottom-center {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-left: 0px;
   font-size: 15px;
   color: #99aabb;
 }
 
 footer.professional-footer-dark .footer-bottom-center .copyright {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 @media (max-width: 768px) {
   footer.professional-footer-dark {
@@ -131,7 +133,7 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Serif 4', serif;
     font-weight: 600;
-    color: #154050;
+    color:  #00a0c6;;
     margin: 15px 0;
 }
 
@@ -206,16 +208,37 @@ footer.professional-footer-dark p,
 footer.professional-footer-dark li {
   color: #d0d8e0;
   line-height: 1.8;
+  margin-left: 0px;
 }
 
 footer.professional-footer-dark ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
 }
 
 footer.professional-footer-dark li {
   margin-bottom: 10px;
+}
+.areas-grid {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+.areas-grid li {
+  font-size: 14px;
+  color: #ccc;
+}
+@media (min-width: 992px) {
+  .areas-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 footer.professional-footer-dark .social-icons a {
@@ -249,7 +272,7 @@ footer.professional-footer-dark .footer-bottom-center {
 }
 
 footer.professional-footer-dark .footer-bottom-center .copyright {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 @media (max-width: 768px) {
   footer.professional-footer-dark {
@@ -257,6 +280,23 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
   }
   footer.professional-footer-dark .social-icons {
     justify-content: center;
+  }
+}
+.areas-grid {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+.areas-grid li {
+  font-size: 14px;
+  color: #ccc;
+}
+@media (min-width: 992px) {
+  .areas-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .embla {
