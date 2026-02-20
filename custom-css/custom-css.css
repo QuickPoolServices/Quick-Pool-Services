@@ -133,8 +133,9 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Serif 4', serif;
     font-weight: 600;
-    color:  #00a0c6;;
+    color:  #0c0e0c;
     margin: 15px 0;
+    padding-top: 20px;
 }
 
 h1.text-center, h2.text-center, h3.text-center,
