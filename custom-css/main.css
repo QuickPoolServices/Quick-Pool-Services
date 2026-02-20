@@ -973,8 +973,6 @@ blockquote {
     font-size: 16px;
     padding: 12px 25px;
   }
-}
-@media (max-width: 768px) {
   .navbar,
   .menu {
     padding: 10px 15px !important;
