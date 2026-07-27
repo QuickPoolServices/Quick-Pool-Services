@@ -620,20 +620,67 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
 }
 .header ul li a:hover,
 .header ul li a.active{
-    color:#1d0ee9;
+ color:#1d0ee9;
 }
 
 .quote-btn{
-    background:#1d0ee9;
-    color:#fff;
-    text-decoration:none;
-    padding:15px 34px;
-    border-radius:40px;
-    font-weight:700;
-    transition:.3s;
+  background:#1d0ee9;
+  color:#fff;
+  text-decoration:none;
+  padding:15px 34px;
+  border-radius:40px;
+  font-weight:700;
+  transition:.3s;
 }
 .quote-btn:hover{
     background:#0284C7;
+}
+@media (max-width: 768px) {
+.top-header{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+text-align:center;
+padding:15px;
+}
+.contact-info{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+.social-icons{
+display:flex;
+justify-content:center;
+gap:18px;
+}
+.navbar{
+padding:10px 15px;
+}
+.navbar-brand img{
+max-width:180px;
+height:auto;
+}
+.navbar-nav{
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+}
+.navbar-nav .nav-link{
+display:block;
+width:100%;
+text-align:center;
+padding:12px 0;
+white-space:nowrap; 
+word-break:normal;
+}
+
+.follow-us{
+writing-mode:horizontal-tb;
+white-space:nowrap;
+}
 }
 .professional-footer{
 background:#031b3a;
