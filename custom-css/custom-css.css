@@ -93,7 +93,7 @@ p {
     line-height: 1.5;
     color: #f2f3f5;
     margin: 15px 0;
-    margin-left: 55px;
+    margin-left: 0px
 }
 
 p.text-left {
@@ -594,6 +594,7 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    font-size: 14px;
     padding:4px 10px;
     box-shadow:0 4px 9px rgba(0,0,0,.08);
     position:sticky;
@@ -627,61 +628,74 @@ footer.professional-footer-dark .footer-bottom-center .copyright {
   background:#1d0ee9;
   color:#fff;
   text-decoration:none;
-  padding:15px 34px;
+  padding:10px 30px;
   border-radius:40px;
-  font-weight:700;
+  font-weight:500;
   transition:.3s;
 }
 .quote-btn:hover{
     background:#0284C7;
 }
 @media (max-width: 768px) {
-.top-header{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:15px;
-text-align:center;
-padding:15px;
+
+.top-bar {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 12px;
+padding: 15px;
 }
-.contact-info{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:10px;
+.top-left,
+.top-right {
+font-size: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
 }
-.social-icons{
-display:flex;
-justify-content:center;
-gap:18px;
-}
-.navbar{
-padding:10px 15px;
-}
-.navbar-brand img{
-max-width:180px;
-height:auto;
-}
-.navbar-nav{
-display:flex;
-flex-direction:column;
-align-items:center;
-width:100%;
-}
-.navbar-nav .nav-link{
-display:block;
-width:100%;
-text-align:center;
-padding:12px 0;
-white-space:nowrap; 
-word-break:normal;
+.header {
+display: flex;
+font-size: 14px;
+flex-direction: column;
+align-items: center;
+padding: 15px;
 }
 
-.follow-us{
-writing-mode:horizontal-tb;
-white-space:nowrap;
+.logo img {
+max-width: 140px;
+height: auto;
+}
+
+nav ul {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+padding: 0;
+margin: 20px 0;
+list-style: none;
+}
+
+nav ul li {
+width: 100%;
+text-align: center;
+}
+
+nav ul li a {
+display: block;
+padding: 8px 0;
+}
+
+.quote-btn {
+width: 100%;
+max-width: 220px;
+font-size: 14px;
+padding: 10px 18px ;
+text-align: center;
 }
 }
+
 .professional-footer{
 background:#031b3a;
 color:#dbe8f5;
