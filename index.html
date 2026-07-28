@@ -138,6 +138,14 @@ document.addEventListener("DOMContentLoaded", function() {
   gtag('js', new Date());
   gtag('config', 'G-5V9YWR4BVT');
 </script>
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+});
+</script>
 
 <div class="top-bar">
     <div class="top-left">
@@ -153,12 +161,14 @@ document.addEventListener("DOMContentLoaded", function() {
         </a>
     </div>
 </div>
-
 <header class="header">
     <div class="logo">
         <img src="images/favic.jpg" alt="Quick Pool Services">
     </div>
-    <nav>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+    <nav id="navbar">
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#generic-text-7-uTh9zHfvJA">About Us</a></li>
