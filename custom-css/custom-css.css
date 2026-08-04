@@ -715,7 +715,35 @@ display: block;
 display: none;
 }
 }
+@media (max-width: 768px) {
+    .top-bar {
+        height: 32px;
+        min-height: 32px;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        line-height: 1;
+    }
 
+    .top-left,
+    .top-right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .top-left span,
+    .top-right span {
+        white-space: nowrap;
+    }
+
+    .top-right a {
+        font-size: 11px;
+    }
+}
 .professional-footer{
 background:#031b3a;
 color:#dbe8f5;
