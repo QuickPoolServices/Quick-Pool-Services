@@ -630,7 +630,6 @@ transition:.3s;
 .header ul li a.active{
 color:#1d0ee9;
 }
-
 .quote-btn{
 background:#1d0ee9;
 color:#fff;
@@ -716,33 +715,32 @@ display: none;
 }
 }
 @media (max-width: 768px) {
-    .top-bar {
-        height: 32px;
-        min-height: 32px;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
-        line-height: 1;
-    }
+.top-bar {
+height: 32px;
+min-height: 32px;
+padding: 0 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+font-size: 10px;
+line-height: 1;
+}
+.top-left,
+.top-right {
+display: flex;
+align-items: center;
+gap: 8px;
+}
 
-    .top-left,
-    .top-right {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
+.top-left span,
+.top-right span {
+white-space: nowrap;
+}
 
-    .top-left span,
-    .top-right span {
-        white-space: nowrap;
-    }
-
-    .top-right a {
-        font-size: 11px;
-    }
+.top-right a {
+font-size: 11px;
+}
 }
 .professional-footer{
 background:#031b3a;
@@ -850,5 +848,43 @@ justify-content:center;
 }
 .footer-btn{
 margin-top:15px;
+}
+}
+/* Quick Pool Services - Pool Vibes YouTube Short */
+.qps-pool-vibes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.qps-pool-vibes .title-wrapper {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.qps-short-wrapper {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+.qps-short-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+@media (max-width: 576px) {
+.qps-pool-vibes {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.qps-pool-vibes .title-wrapper {
+  margin-bottom: 18px;
+}
+.qps-short-wrapper {
+  max-width: 100%;
+  border-radius: 10px;
 }
 }
