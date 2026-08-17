@@ -759,19 +759,31 @@ v<section data-bs-version="5.1" class="article08 foodm5 cid-uTh9zH9Cld" id="test
 </section>
 <section data-bs-version="5.1" class="vide01 foodm5 cid-uTh9zHflZj qps-pool-vibes" id="video-1-uTh9zHflZj">
     <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-12"> 
-        <div class="title-wrapper">
-            <h2 class="mbr-section-title mbr-fonts-style display-2">Pool Vibes</h2>
-    </div>
-    <div class="qps-short-wrapper">
-    <iframe 
-    class="qps-short-video"
-    src="https://www.youtube.com/embed/nxLoWCMcyVg?rel=0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    title="Quick Pool Services - Pool Vibes">
-    </iframe>
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">
+                        Pool Vibes
+                    </h2>
+                </div>
+
+                <div class="qps-short-wrapper qps-youtube-facade" data-video-id="nxLoWCMcyVg">
+
+                    <img
+                        src="https://img.youtube.com/vi/nxLoWCMcyVg/maxresdefault.jpg"
+                        class="qps-short-video"
+                        width="1280"
+                        height="720"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Quick Pool Services Pool Vibes video">
+                    <button
+                        type="button"
+                        class="qps-play-button"
+                        aria-label="Play Quick Pool Services Pool Vibes video">
+                        <span aria-hidden="true">▶</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1576,6 +1588,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }, 3500);
 
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const videoWrapper = document.querySelector(".qps-youtube-facade");
+    if (!videoWrapper) return;
+    const playButton = videoWrapper.querySelector(".qps-play-button");
+    playButton.addEventListener("click", function () {
+        const videoId = videoWrapper.getAttribute("data-video-id");
+        const iframe = document.createElement("iframe");
+        iframe.className = "qps-short-video";
+        iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+        iframe.title = "Quick Pool Services - Pool Vibes";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.loading = "lazy";
+        videoWrapper.innerHTML = "";
+        videoWrapper.appendChild(iframe);
+    });
 });
 </script>
 </body>
