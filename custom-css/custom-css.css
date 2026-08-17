@@ -1217,7 +1217,6 @@ position: relative;
 min-height: 100vh;
 display: flex;
 align-items: center;
-background: url("../images/Footer.png") center center / cover no-repeat;
 overflow: hidden;
 }
 .overlay {
