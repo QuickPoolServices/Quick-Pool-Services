@@ -1,0 +1,153 @@
+:root {
+    --qps-blue: #032b5c;
+    --qps-light-blue: #0b6fb8;
+    --qps-text: #333333;
+    --qps-light: #f5f9fc;
+    --qps-white: #ffffff;
+    --qps-border: #dce6ef;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--qps-white);
+    color: var(--qps-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+body > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1,
+h2,
+h3 {
+    color: var(--qps-blue);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    margin-top: 0;
+}
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: clamp(27px, 4vw, 38px);
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+h3 {
+    font-size: 24px;
+}
+p {
+    margin: 0 0 20px;
+}
+nav {
+    padding: 18px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--qps-border);
+}
+nav a {
+    color: var(--qps-blue);
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 12px;
+}
+nav a:hover {
+    color: var(--qps-light-blue);
+    text-decoration: underline;
+}
+a {
+    color: var(--qps-light-blue);
+}
+
+a:hover {
+    color: var(--qps-blue);
+}
+ul {
+    padding-left: 25px;
+    margin: 20px 0 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+main {
+    padding: 40px 25px 60px;
+}
+section:last-child {
+    background: var(--qps-light);
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--qps-border);
+}
+section:last-child h2 {
+    margin-top: 0;
+}
+section:last-child a {
+    font-weight: 700;
+    text-decoration: none;
+}
+a[href^="tel:"] {
+    white-space: nowrap;
+}
+.btn,
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--qps-blue);
+    color: var(--qps-white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+}
+.btn:hover,
+button:hover {
+    background: var(--qps-light-blue);
+    color: var(--qps-white);
+}
+@media (max-width: 767px) {
+
+    body {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    main {
+        padding: 25px 18px 45px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 32px;
+    }
+
+    nav {
+        padding: 15px 18px;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    section:last-child {
+        padding: 20px;
+    }
+}
