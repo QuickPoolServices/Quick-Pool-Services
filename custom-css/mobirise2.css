@@ -590,7 +590,6 @@ font-weight: 500;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 #features-1-uTh9zHaH83 .mbr-text {
   font-size: 1rem;
   color: #455a64;
@@ -601,8 +600,7 @@ font-weight: 500;
   #features-1-uTh9zHaH83 {
     padding: 40px 15px;
   }
-
-  #features-1-uTh9zHaH83 .item {
+ #features-1-uTh9zHaH83 .item {
     margin-bottom: 20px;
   }
 }

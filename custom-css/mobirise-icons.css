@@ -473,21 +473,9 @@
 .mbri-undo::before  {
   content: "\e995";
 }
-.phone-icon,
-.phone-icon::before  {
-  color: rgb(21, 80, 243);
-  font-size: 60px;
-  display: inline-block;
-  line-height: 1;
-  vertical-align: middle;
-  transition: color 0.3s;
-}
 .mobi-mbri-quote-left.white-icon
 {font-size: medium;
 color: #ffffff;
-}
-a:hover .phone-icon {
-  color: rgb(15, 60, 200);
 }
 .mbri-touch-swipe::before  {
   content: "\e995";
