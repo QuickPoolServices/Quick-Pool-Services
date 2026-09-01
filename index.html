@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-za">
-<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -53,81 +52,90 @@
 }
 </script>
 <script>
-const idList = {};
-document.querySelectorAll('[id]').forEach(el => {
-  if (idList[el.id]) {
-    console.error('DUPLICATE ID DETECTED:', el.id, el);
-  } else {
-    idList[el.id] = true;
-  }
-});
-</script>
-</head>
-<body>
+document.addEventListener("DOMContentLoaded", function () {
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const tabContainers = document.querySelectorAll('.tab-content');
+  const idMap = {};
+  let duplicateFound = false;
 
-  tabContainers.forEach((container, containerIndex) => {
-    const prefix = `tabgroup-${Date.now()}-${containerIndex}`;
-    const tabPanes = container.querySelectorAll('.tab-pane');
-    tabPanes.forEach((pane, paneIndex) => {
-      const oldId = pane.id;
-      const newId = `${prefix}-pane-${paneIndex + 1}`;
-      pane.id = newId;
-      const triggers = document.querySelectorAll(`[data-toggle="tab"][href="#${oldId}"], [data-bs-toggle="tab"][href="#${oldId}"]`);
-      triggers.forEach(trigger => {
-        trigger.href = `#${newId}`;
-        if (trigger.hasAttribute('aria-controls')) {
-          trigger.setAttribute('aria-controls', newId);
-        }
+  // Check all IDs on the page
+  document.querySelectorAll("[id]").forEach(function (element) {
+
+    const id = element.id;
+
+    if (!idMap[id]) {
+      idMap[id] = [];
+    }
+
+    idMap[id].push(element);
+  });
+
+  // Report duplicates
+  Object.keys(idMap).forEach(function (id) {
+
+    if (idMap[id].length > 1) {
+
+      duplicateFound = true;
+
+      console.group("⚠️ DUPLICATE ID DETECTED: " + id);
+
+      idMap[id].forEach(function (element, index) {
+        console.log(
+          "Duplicate " + (index + 1) + ":",
+          element
+        );
       });
-      if (pane.hasAttribute('aria-labelledby')) {
-        const labelledBy = pane.getAttribute('aria-labelledby');
-        const labelEl = document.querySelector(`[id="${labelledBy}"]`);
-        if (labelEl && labelEl.hasAttribute('aria-controls')) {
-          labelEl.setAttribute('aria-controls', newId);
-        }
-      }
-    });
+
+      console.groupEnd();
+    }
   });
 
-  console.log('All tab IDs have been made unique.');
+  if (!duplicateFound) {
+    console.log("✅ No duplicate IDs found on this page.");
+  }
+
 });
-</script>
+</script><script>
+document.addEventListener("DOMContentLoaded", function () {
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const menuSections = document.querySelectorAll('section[once="menu"][id^="menu-"]');
+  const idMap = {};
+  let duplicateFound = false;
 
-  menuSections.forEach((section, index) => {
+  // Check all IDs on the page
+  document.querySelectorAll("[id]").forEach(function (element) {
 
-    const randomSuffix = Math.random().toString(36).substring(2, 10);
-    const newId = `menu-${Date.now()}-${index}-${randomSuffix}`;
+    const id = element.id;
 
-    const newCid = `cid-${btoa(newId).replace(/[^a-zA-Z0-9]/g, '').substring(0, 12)}`;
-    const oldId = section.id;
-    section.id = newId;
-    section.className = section.className.replace(/\bcid-[a-zA-Z0-9]+\b/g, '');
-    section.classList.add(newCid);
-    const allElements = section.querySelectorAll('[data-target],[aria-labelledby],[href^="#"]');
-    allElements.forEach(el => {
-      if (el.hasAttribute('data-target') && el.getAttribute('data-target') === `#${oldId}`) {
-        el.setAttribute('data-target', `#${newId}`);
-      }
+    if (!idMap[id]) {
+      idMap[id] = [];
+    }
 
-      if (el.hasAttribute('aria-labelledby') && el.getAttribute('aria-labelledby') === oldId) {
-        el.setAttribute('aria-labelledby', newId);
-      }
-
-      if (el.hasAttribute('href') && el.getAttribute('href') === `#${oldId}`) {
-        el.setAttribute('href', `#${newId}`);
-      }
-    });
-
-    console.log(`Menu #${index + 1}: ID updated from "${oldId}" to "${newId}"`);
+    idMap[id].push(element);
   });
+
+  // Report duplicates
+  Object.keys(idMap).forEach(function (id) {
+
+    if (idMap[id].length > 1) {
+
+      duplicateFound = true;
+
+      console.group("⚠️ DUPLICATE ID DETECTED: " + id);
+
+      idMap[id].forEach(function (element, index) {
+        console.log(
+          "Duplicate " + (index + 1) + ":",
+          element
+        );
+      });
+
+      console.groupEnd();
+    }
+  });
+
+  if (!duplicateFound) {
+    console.log("✅ No duplicate IDs found on this page.");
+  }
+
 });
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V9YWR4BVT"></script>
