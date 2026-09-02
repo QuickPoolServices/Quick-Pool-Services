@@ -1108,28 +1108,24 @@ animation-iteration-count: 1 !important;
     height: 70px;
   }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 480px) {
 
   .hero {
     min-height: 590px;
   }
-
   .hero-content {
     padding: 90px 15px 100px;
   }
-
   .hero-content h1 {
     font-size: 34px;
   }
-
   .hero-content p {
     font-size: 14px;
   }
-
   .hero-buttons {
     gap: 8px;
   }
-
   .hero-buttons a {
     min-width: 115px;
     max-width: 145px;
@@ -1137,16 +1133,13 @@ animation-iteration-count: 1 !important;
     padding: 0 12px;
     font-size: 12px;
   }
-
   .hero-features .feature {
     font-size: 12px;
   }
-
   .guarantee-badge {
     right: 10px;
     bottom: 48px;
   }
-
   .badge-circle {
     width: 68px;
     height: 68px;
