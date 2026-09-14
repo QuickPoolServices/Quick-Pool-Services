@@ -114,7 +114,7 @@ color: #ffffff;
 display: inline-block;
 padding: 10px 22px;
 border-radius: 30px;
-background: rgba(14, 165, 233, 0.15);
+background: rgba(19, 66, 68, 0.15);
 border: 1px solid rgba(34, 211, 238, 0.4);
 color: #7dd3fc;
 font-size: 14px;
@@ -196,9 +196,9 @@ align-items: center;
 width: 145px;
 height: 145px;
 border-radius: 50%;
-background: #221088;
+background: rgba(8, 202, 216, 0.8);
 border: 4px solid #ffffff;
-outline: 2px solid rgba(30, 10, 143, 0.8);
+outline: 2px solid rgba(8, 202, 216, 0.8);
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
 display: flex;
 flex-direction: column;
@@ -756,7 +756,7 @@ margin-bottom: 0;
 @media (max-width: 767px) {
 .top-bar {
 height: 32px;
-min-height: 32px;
+min-height: 42px;
 padding: 0 8px;
 gap: 6px;
 font-size: 10px;
@@ -783,8 +783,8 @@ padding: 12px 20px;
 display: block;
 order: 2;
 }
-.logo img {
-max-width: 140px;
+.logo {
+max-width: 100px;
 }
 nav {
 display: none;
@@ -817,10 +817,10 @@ padding: 12px;
 display: none;
 }
 .hero {
-min-height: 680px;
+position: relative;
+min-height:100vh;
 height: auto;
 padding: 0;
-position: relative;
 display: flex;
 align-items: center;
 overflow: hidden;
@@ -831,7 +831,7 @@ inset: 0;
 width: 100%;
 height: 100%;
 object-fit: cover;
-object-position: center center;
+object-position: center;
 z-index: 0;
 }
 .overlay {
@@ -994,13 +994,6 @@ animation-iteration-count: 1 !important;
 }
 }
 @media (max-width: 767px) {
-
-.hero {
-position: relative;
-min-height: 620px;
-height: auto;
-overflow: hidden;
-}
 .hero-image {
 position: absolute;
 inset: 0;
@@ -1091,6 +1084,10 @@ align-items: center;
 justify-content: center;
 text-align: center;
 }
+.guarantee-badge {
+right: 10px;
+bottom: 208px;
+}
 .badge-circle span {
 font-size: 17px;
 line-height: 1;
@@ -1106,49 +1103,6 @@ left: 0;
 bottom: -1px;
 width: 100%;
 height: 70px;
-}
-}
-
-@media (max-width: 480px) {
-
-.hero {
-min-height: 590px;
-}
-.hero-content {
-padding: 90px 15px 100px;
-}
-.hero-content h1 {
-font-size: 34px;
-}
-.hero-content p {
-font-size: 14px;
-}
-.hero-buttons {
-gap: 8px;
-}
-.hero-buttons a {
-min-width: 115px;
-max-width: 145px;
-height: 40px;
-padding: 0 12px;
-font-size: 12px;
-}
-.hero-features .feature {
-font-size: 12px;
-}
-.guarantee-badge {
-right: 10px;
-bottom: 48px;
-}
-.badge-circle {
-width: 68px;
-height: 68px;
-}
-.badge-circle span {
-font-size: 15px;
-}
-.badge-circle small {
-font-size: 6px;
 }
 }
 .seo-intro {

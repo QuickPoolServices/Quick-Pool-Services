@@ -9,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="mobi-"], [class*=" mobi-"] {
   font-family: 'Moririse2' !important;
   font-style: normal;
@@ -20,7 +19,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .mobi-mbri-add-submenu:before {
   content: "\e900";
 }
@@ -538,12 +536,10 @@ margin-top: 10px;
 font-weight: 500;
 }
 */
-
 #features-1-uTh9zHaH83 {
   padding: 60px 20px;
   background: #f7f9fc;
 }
-
 #features-1-uTh9zHaH83 .item {
   text-align: center;
   padding: 30px 20px;
@@ -552,12 +548,10 @@ font-weight: 500;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
-
 #features-1-uTh9zHaH83 .item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 25px rgba(0,0,0,0.12);
 }
-
 #features-1-uTh9zHaH83 .icon-wrap {
   width: 90px;
   height: 90px;
@@ -569,20 +563,16 @@ font-weight: 500;
   margin: 0 auto 15px auto;
   transition: 0.3s;
 }
-
 #features-1-uTh9zHaH83 .icon-wrap span {
   font-size: 40px;
   color: #0a3d62;
 }
-
 #features-1-uTh9zHaH83 .item:hover .icon-wrap {
   background: #0a3d62;
 }
-
 #features-1-uTh9zHaH83 .item:hover .icon-wrap span {
   color: #ffffff;
 }
-
 #features-1-uTh9zHaH83 .mbr-card-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -595,7 +585,6 @@ font-weight: 500;
   color: #455a64;
   line-height: 1.5;
 }
-
 @media (max-width: 767px) {
   #features-1-uTh9zHaH83 {
     padding: 40px 15px;
