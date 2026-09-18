@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-    <home>
+    <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -40,7 +40,7 @@
   "logo": "https://quickpoolservices.co.za/favicon.ico",
   "url": "https://quickpoolservices.co.za", "telephone": "+27745551054", "email": "info@quickpoolservices.co.za",
   "description": "Quick Pool Services offers expert swimming pool installation, cleaning, maintenance, and renovation across Gauteng, South Africa.",
-      "sameAs": [ "https://www.facebook.com/quickmates/", "https://www.Instagram.com/quickpoolmates/",
+      "sameAs": [ "https://www.facebook.com/quickmates/", "https://www.instagram.com/quickpoolmates/",
   "https://mobile.twitter.com/quickpoolmates?t=99uPJaWOo3rircTc-ByOPws=09",
   "https://www.linkedin.com/in/quick-pool-service-b21027238" ],
   "address": { "@type": "PostalAddress", "addressRegion": "Gauteng","addressCountry": "ZA" },
@@ -97,52 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
-</script><script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const idMap = {};
-  let duplicateFound = false;
-
-  // Check all IDs on the page
-  document.querySelectorAll("[id]").forEach(function (element) {
-
-    const id = element.id;
-
-    if (!idMap[id]) {
-      idMap[id] = [];
-    }
-
-    idMap[id].push(element);
-  });
-
-  // Report duplicates
-  Object.keys(idMap).forEach(function (id) {
-
-    if (idMap[id].length > 1) {
-
-      duplicateFound = true;
-
-      console.group("⚠️ DUPLICATE ID DETECTED: " + id);
-
-      idMap[id].forEach(function (element, index) {
-        console.log(
-          "Duplicate " + (index + 1) + ":",
-          element
-        );
-      });
-
-      console.groupEnd();
-    }
-  });
-
-  if (!duplicateFound) {
-    console.log("✅ No duplicate IDs found on this page.");
-  }
-
-});
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V9YWR4BVT"></script>
- </home>
+ </head>
+ <body>
 <div class="top-bar">
     <div class="top-left">
         <span>📞 074 555 1054</span>
@@ -194,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
          alt="Professional pool services by Quick Pool Services">
     <div class="overlay"></div>
     <div class="hero-content">
-        <span class="hero-badge">PROFESSIONAL POOL SERICES</span>
+        <span class="hero-badge">PROFESSIONAL POOL SERVICES</span>
         <h1>Pool Perfection<br><span>Every Time.</span></h1>
         <p>
             Expert pool cleaning, repairs, maintenance,
@@ -357,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 </section>
 
-<section class="service-block">
+<section class="service-block" id="pool-repairs">
   <h2>Pool Repairs and Fault Finding</h2>
   <p>
     Pump not working? Leaking pipes? Noisy filter?
@@ -495,7 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 Satisfied Quick Pool Services Client</h2>
                     <div class="image-wrapper">
                     <img src="images/images-photo-1530466449035-bc37f0d0bb87.jpeg" loading="lazy" 
-                    alt="Quick  Pool Services Clients A beautiful lady on a pool duck-like floater in the pool ">
+                    alt="client enjoying a swimming pool"> 
                 </div>
             </div>
         </div>
@@ -532,7 +490,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 <section data-bs-version="5.1" class="gallery01 foodm5 cid-uTh9zHeMBE" id="gallery-1-uTh9zHeMBE">
 
-    <h4 class="visually-hidden" font-family="mbr-section-title mbr-fonts-style display-5">Quick Pool Services Photo Gallery</h4>
+    <h2 class="visually-hidden">Quick Pool Services Photo Gallery</h2>
 
     <div class="container-fluid">
         <div class="row">
@@ -1493,9 +1451,9 @@ We provide professional swimming pool construction, renovations, maintenance and
 <ul class="footer-links">
 <li><a href="#hero-1-uTh9zHa11Y">Pool Maintenance</a></li>
 <li><a href="#features-3-uTh9zHfG51">Pool Construction</a></li>
-<li><a href="#product-list-2-uTh9zHa20O">Pool Renovations</a></li>
+<li><a href="#product-list-1-uTh9zHiBPD">Pool Renovations</a></li>
 <li><a href="#features-2-uTh9zH705L">Pool Cleaning</a></li>
-<li><a href="#contact-form-1-uTh9zHjgPq">Contact</a></li>
+<li><a href="#team-2-uTh9zHbV3G">Contact</a></li>
 </ul>
 </div>
 <div class="col-lg-3">
@@ -1516,7 +1474,7 @@ We provide professional swimming pool construction, renovations, maintenance and
 <div class="social-icons">
 <a href="https://www.facebook.com/quickmates/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a href="https://www.instagram.com/quickpoolmates/" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.linkedin.com/company/quick-pool-services/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.linkedin.com/in/quick-pool-service-b21027238" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 <a href="https://www.youtube.com/@quickpoolservice5332" target="_blank"><i class="fab fa-youtube"></i></a>
 <a href="https://wa.me/27745551054" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div>
@@ -1588,42 +1546,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3500);
 
 });
-</script><script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const cards = document.querySelectorAll(".service-carousel .service-card");
-
-    if (cards.length < 2) {
-        return;
-    }
-
-    let current = 0;
-
-    setInterval(function () {
-
-        const previous = current;
-
-        current++;
-
-        if (current >= cards.length) {
-            current = 0;
-        }
-
-        cards[previous].classList.remove("active");
-        cards[previous].classList.add("exit");
-
-        cards[current].classList.remove("exit");
-        cards[current].classList.add("active");
-
-        setTimeout(function () {
-            cards[previous].classList.remove("exit");
-        }, 800);
-
-    }, 3500);
-
-});
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const videoWrapper = document.querySelector(".qps-youtube-facade");
